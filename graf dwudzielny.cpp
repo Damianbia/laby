@@ -6,12 +6,15 @@
 using namespace std;
 int main()
 {
-	int x, y, niedwudzielny=0,pop=0;// tabx[5], taby[5], tabn[10], tabcz[10],zmienna,tym=0;//inicjalizacja
+	int x, y, niedwudzielny=0,pop=0,dlugosc;// tabx[5], taby[5], tabn[10], tabcz[10],zmienna,tym=0;//inicjalizacja
 	vector<int>tabx{};
 	vector<int>taby{};
 	vector<int>tabcz{0};
 	vector<int>tabn{0};
-	for (int i = 0; i < 5; i++) {//wpisywanie grafu z reki
+	cout << "wypisz ilosc krawedzi grafu grafu ";
+	cin >> dlugosc;
+	cout << endl;
+	for (int i = 0; i < dlugosc; i++) {//wpisywanie grafu z reki
 		cin >> x;
 		tabx.push_back(x);
 		cin >> y;
